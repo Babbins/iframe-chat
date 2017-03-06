@@ -1,0 +1,27 @@
+html, body {
+  height: 100%; width: 100%; margin: 0;
+  overflow:hidden;
+}
+
+form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: 5px black solid;
+  height: 20%;
+  width: 100%;
+}
+
+label#chat-name {
+  height: 100%;
+  color: #2196F3;
+}
+input#chat-message {
+  height: 100%;
+  border-bottom: none;
+}
+#messages {
+  overflow: scroll;
+  position: relative;
+  height: 80%;
+}
