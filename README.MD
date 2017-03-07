@@ -1,4 +1,4 @@
 # iframe-chat
 
 ##Demo
-Check it out at: http://wwww.babbins.github.io/iframe-chat
+Check it out at: https://babbins.github.io/iframe-chat
