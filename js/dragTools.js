@@ -61,7 +61,7 @@ const dragTools =
     };
   }
   return {
-    zIndex,
+    getZIndex: () => zIndex++,
     makeDraggable
   };
 }());

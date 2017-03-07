@@ -7,7 +7,7 @@ window.onload = () => {
     const iframeId = window.frames.length + 1;
     const iframeContainer = document.createElement('div');
     iframeContainer.className = 'iframeContainer';
-    iframeContainer.style.zIndex = dragTools.zIndex;
+    iframeContainer.style.zIndex = dragTools.getZIndex();
 
     const newIframe = document.createElement('iframe');
     newIframe.setAttribute('src', 'iframe.html');
