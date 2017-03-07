@@ -1,12 +1,12 @@
 html, body {
   height: 100%; width: 100%; margin: 0;
-  overflow:hidden;
+  overflow:scroll;
 }
 
 form {
   position: fixed;
   bottom: 0;
-  border: 5px #2196F3 solid;
+  border-top: 1px #2196F3 solid;
   height: 40px;
   width: 100%;
 }
@@ -14,13 +14,18 @@ form {
 label#chat-name {
   height: 100%;
   color: #2196F3;
-  width: 10%;
+  font-size: 12px;
+  width: 20%;
   display: inline;
 }
 input#chat-message {
-  height: 100%;
-  width: 50%;
+  /*border: 2px black solid;*/
+  height: 90%;
+  width: 80%;
   display: inline;
+}
+input#chat-message:focus {
+  border-bottom-color: black;
 }
 #messages {
   overflow: scroll;

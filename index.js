@@ -1,4 +1,4 @@
-/* global makeDraggable */
+/* globals dragTools */
 
 window.onload = () => {
   const iframes = window.frames;
@@ -7,6 +7,7 @@ window.onload = () => {
     const iframeId = window.frames.length + 1;
     const iframeContainer = document.createElement('div');
     iframeContainer.className = 'iframeContainer';
+    iframeContainer.style.zIndex = dragTools.zIndex;
 
     const newIframe = document.createElement('iframe');
     newIframe.setAttribute('src', 'iframe.html');
@@ -17,7 +18,7 @@ window.onload = () => {
     document.body.appendChild(iframeContainer);
     iframeContainer.appendChild(newIframe);
     iframeContainer.appendChild(dragger);
-    makeDraggable(dragger);
+    dragTools.makeDraggable(dragger);
 
     //once iframe has loaded
     //emit to it a 'join' event.

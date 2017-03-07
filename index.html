@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,29 +17,21 @@
     <h4>
       Coding Challenge
     </h4>
-    <p>
+    <span>
       by Ali Mahmoud
-      <a href="https://github.com/babbins/iframe-chat">
-        <image id="github" class="responsive-image" src="assets/github.png"></image>
-      </a>
-    </p>
+    </span>
+    <a href="https://github.com/babbins/iframe-chat">
+      <image id="github" class="responsive-image" src="assets/github.png"></image>
+    </a>
   </div>
-  <!-- <div draggable="true" class="draggable" data-item="0">One</div>
-  <div draggable="true" class="draggable second" data-item="1">Two</div> -->
+
   <a id="addIframe" onclick="addIframe()" class="btn-floating btn-large waves-effect waves-light blue">
     <i class="material-icons">add</i>
   </a>
 
-  <!-- <div id="main-container" class="container"></div> -->
-  <!-- <i id="drag" class="material-icons">open_with</i>
-  <div id="iframeContainer" class="draggable" draggable="true" data-item="0">
-    <i id="drag" class="material-icons">open_with</i>
-    <iframe id="iframe" src="" frameborder="2"></iframe>
-  </div> -->
-
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-  <script src="makeDraggable.js"></script>
+  <script src="dragTools.js"></script>
   <script src="index.js" ></script>
 </body>
 </html>

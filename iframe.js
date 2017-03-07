@@ -31,24 +31,24 @@ window.onload = () => {
     id = data.id;
     const msg = document.createElement('div');
     msg.className = 'col s12';
-    msg.innerHTML = `Joined chat as iframe-${id}.`;
-    label.innerHTML = `[iframe-${id}]`;
+    msg.innerHTML = `[system]: Joined chat as iframe-${id}.`;
+    label.innerHTML = `[iframe-${id}]:`;
     messages.appendChild(msg);
   }
 
   //displays that a new Iframe has joined.
   function handleNewGuest(data) {
     const msg = document.createElement('div');
-    msg.className = 'col s12';
-    msg.innerHTML = `iframe-${data.id} has joined the chat.`;
+    msg.className = 'col s12 well';
+    msg.innerHTML = `[system]: iframe-${data.id} has joined the chat.`;
     messages.appendChild(msg);
   }
 
   //displays a message sent by an Iframe (including it's own).
   function handleNewMessage(data) {
     const msg = document.createElement('div');
-    msg.className = 'col s12';
-    msg.innerHTML = `iframe-${data.sender}: ${data.message}`
+    msg.className = 'col s12 well';
+    msg.innerHTML = `[iframe-${data.sender}]: ${data.message}`
     messages.appendChild(msg);
     messages.scrollTop = messages.scrollHeight;
   }

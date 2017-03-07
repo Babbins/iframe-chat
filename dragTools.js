@@ -1,6 +1,6 @@
 //IIFE so zIndex is not global
 //gives element ability to reposition PARENT element on drag.
-const makeDraggable =
+const dragTools =
 (function () {
   let zIndex = 2;
 
@@ -60,5 +60,8 @@ const makeDraggable =
       };
     };
   }
-  return makeDraggable;
+  return {
+    zIndex,
+    makeDraggable
+  };
 }());
