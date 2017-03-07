@@ -6,19 +6,21 @@ html, body {
 form {
   position: fixed;
   bottom: 0;
-  left: 0;
-  border: 5px black solid;
-  height: 20%;
+  border: 5px #2196F3 solid;
+  height: 40px;
   width: 100%;
 }
 
 label#chat-name {
   height: 100%;
   color: #2196F3;
+  width: 10%;
+  display: inline;
 }
 input#chat-message {
   height: 100%;
-  border-bottom: none;
+  width: 50%;
+  display: inline;
 }
 #messages {
   overflow: scroll;

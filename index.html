@@ -11,12 +11,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="logo">
+    <image class="responsive-img" src='assets/logo.png'></image>
+    <h4>
+      Coding Challenge
+    </h4>
+    <p>
+      by Ali Mahmoud
+      <a href="https://github.com/babbins/iframe-chat">
+        <image id="github" class="responsive-image" src="assets/github.png"></image>
+      </a>
+    </p>
+  </div>
   <!-- <div draggable="true" class="draggable" data-item="0">One</div>
   <div draggable="true" class="draggable second" data-item="1">Two</div> -->
-
   <a id="addIframe" onclick="addIframe()" class="btn-floating btn-large waves-effect waves-light blue">
     <i class="material-icons">add</i>
   </a>
+
+  <!-- <div id="main-container" class="container"></div> -->
   <!-- <i id="drag" class="material-icons">open_with</i>
   <div id="iframeContainer" class="draggable" draggable="true" data-item="0">
     <i id="drag" class="material-icons">open_with</i>
@@ -25,6 +38,7 @@
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script src="makeDraggable.js"></script>
   <script src="index.js" ></script>
 </body>
 </html>
