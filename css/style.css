@@ -64,7 +64,7 @@ iframe {
 
 .drag {
   position: absolute;
-  background-image: url('assets/drag.png');
+  background-image: url('../assets/drag.png');
   background-size: contain;
   cursor: -moz-grab;
   cursor: -webkit-grab;
