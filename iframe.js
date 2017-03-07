@@ -1,5 +1,5 @@
 window.onload = () => {
-  const input = document.getElementById("chat-message");
+  const input = document.getElementById('chat-message');
   const label = document.getElementById('chat-name');
   const messages = document.getElementById('messages');
   let parentWindow, id;
